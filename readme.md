@@ -22,6 +22,7 @@ DISTRIB_DESCRIPTION="Ubuntu 18.04.5 LTS"
 - ansible ansibleホストのためにansibleとlinterをインストールします。
 - golang Goをインストール パスはbashに通します。
 - docker docker & docker-composeをインストール
+- php phpをインストール(apt) php ver 7.2.24-0ubuntu0.18.04.6 (cli)
 
 ## 注意
 

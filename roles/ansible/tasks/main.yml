@@ -1,0 +1,26 @@
+- name: install ansible host pre update
+  become: yes
+  apt:
+    update_cache: yes
+
+- name: istall software-properties-common
+  become: yes
+  apt:
+    name: software-properties-common
+
+- name: add repo ppa:ansible/ansible
+  become: yes
+  apt_repository:
+    repo: ppa:ansible/ansible
+
+- name: after update
+  become: yes
+  apt:
+    update_cache: yes
+
+- name: install ansible & linter
+  become: yes
+  apt:
+    name:
+      - ansible
+      - ansible-lint

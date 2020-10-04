@@ -13,7 +13,7 @@ DISTRIB_CODENAME=bionic
 DISTRIB_DESCRIPTION="Ubuntu 18.04.5 LTS"
 ```
 
-## 構成
+## roles構成
 
 - original 単体で入れるパッケージ群これはパスして実行しても問題ありません
 - power-shell-core パワーシェルコアを入れます

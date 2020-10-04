@@ -15,10 +15,11 @@ DISTRIB_DESCRIPTION="Ubuntu 18.04.5 LTS"
 
 ## 構成
 
-- original 単体で入れるパッケージ群これはアズして実行しても問題ありません
+- original 単体で入れるパッケージ群これはパスして実行しても問題ありません
 - power-shell-core パワーシェルコアを入れます
 - python3 Python3入れます
 - gatsby gatsby-cliをインストールします、尚インストールの途中でnodejs npmを入れています。
+- ansible ansibleホストのためにansibleとlinterをインストールします。
 
 ## 注意
 

@@ -21,6 +21,7 @@ DISTRIB_DESCRIPTION="Ubuntu 18.04.5 LTS"
 - gatsby gatsby-cliをインストールします、尚インストールの途中でnodejs npmを入れています。
 - ansible ansibleホストのためにansibleとlinterをインストールします。
 - golang Goをインストール パスはbashに通します。
+- docker docker & docker-composeをインストール
 
 ## 注意
 

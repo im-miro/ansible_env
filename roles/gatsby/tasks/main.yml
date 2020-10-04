@@ -1,0 +1,18 @@
+- name: pre update
+  become: yes
+  apt:
+    update_cache: yes
+
+- name: install nodejs & npm
+  become: yes
+  apt:
+    name:
+      - nodejs
+      - npm
+  register: npm_result
+
+- name: install gatsby cli
+  become: yes
+  command: npm install --global gatsby-cli
+  when: npm_result is defined
+  register: result

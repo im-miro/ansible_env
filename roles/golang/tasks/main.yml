@@ -1,0 +1,15 @@
+- name: golang wget
+  get_url:
+    url: https://golang.org/dl/go1.15.2.linux-amd64.tar.gz
+    dest: /home/miro
+
+- name: untargz
+  become: yes
+  unarchive:
+    src: /home/miro/go1.15.2.linux-amd64.tar.gz
+    dest: /usr/local
+
+- name: add path
+  lineinfile:
+    dest: /home/miro/.bashrc
+    line: "export PATH=$PATH:/usr/local/go/bin"

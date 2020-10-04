@@ -20,6 +20,7 @@ DISTRIB_DESCRIPTION="Ubuntu 18.04.5 LTS"
 - python3 Python3入れます
 - gatsby gatsby-cliをインストールします、尚インストールの途中でnodejs npmを入れています。
 - ansible ansibleホストのためにansibleとlinterをインストールします。
+- golang Goをインストール パスはbashに通します。
 
 ## 注意
 

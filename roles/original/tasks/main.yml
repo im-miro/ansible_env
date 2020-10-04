@@ -1,0 +1,8 @@
+- name: install preparation for my wsl
+  become: yes
+  apt:
+    name:
+      - tmux
+      - vim
+      - git
+      - zsh

@@ -1,0 +1,28 @@
+- name: powershell core wget
+  become: yes
+  get_url:
+    url: https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
+    dest: /home/miro
+
+- name: dpkg isntall
+  become: yes
+  dpkg_selections:
+    name: packages-microsoft-prod.deb
+    selection: install
+
+- name: update
+  become: yes
+  apt:
+    update_cache: yes
+
+- name: Enable the "universe" repositories
+  become: yes
+  apt_repository:
+    repo: "{{ item }}"
+  loop:
+    - "deb http://archive.ubuntu.com/ubuntu/ bionic universe"
+
+- name: install powershell core
+  become: yes
+  apt:
+    name: powershell

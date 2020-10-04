@@ -1,0 +1,4 @@
+---
+- hosts: wsl
+  roles:
+    - python3
